@@ -24,3 +24,7 @@ var initProfileWalletLogin = (token,returnUrl) => {
     window.initPW = (token,returnUrl) => {
         initProfileWalletLogin(token,returnUrl)
     }
+
+    console.log(window);
+
+    console.log("ehe");

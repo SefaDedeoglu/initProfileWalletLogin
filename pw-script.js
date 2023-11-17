@@ -1,4 +1,4 @@
-const initProfileWalletLogin = (token,returnUrl) => {
+var initProfileWalletLogin = (token,returnUrl) => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     myHeaders.append("Authorization", "Bearer " + token);
@@ -19,8 +19,8 @@ const initProfileWalletLogin = (token,returnUrl) => {
             }
         })
         .catch(error => console.log('error', error));
-}
+    }
 
-window.initPW = (token,returnUrl) => {
-    initProfileWalletLogin(token,returnUrl)
-}
+    window.initPW = (token,returnUrl) => {
+        initProfileWalletLogin(token,returnUrl)
+    }

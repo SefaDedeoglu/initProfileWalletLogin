@@ -21,7 +21,5 @@ var initProfileWalletLogin = (token,returnUrl) => {
         .catch(error => console.log('error', error));
     }
 
-    window.initPW = (token,returnUrl) => {
-        initProfileWalletLogin(token,returnUrl)
-    }
+export default initProfileWalletLogin;
 

@@ -14,7 +14,7 @@ var initProfileWalletLogin = (token,returnUrl) => {
         .then(response => {
             if (response.status) {
                 // const min_window = window.open("https://demo-frontend.profilewallet.com/?returnUrl="+returnUrl, "_blank", "toolbar=no,scrollbars=yes,resizable=no,top=500,left=500,width=400,height=600");
-                window.location.href = `https://demo-frontend.profilewallet.com/login-with-profile-wallet/?returnUrl=${returnUrl}&token=${token}`
+                window.location.href = `https://app.profilewallet.com/login-with-profile-wallet/?returnUrl=${returnUrl}&token=${token}`
 
             }
         })
